@@ -31,4 +31,3 @@ fn main() {
         // ANCHOR_END: with-move
     });
 }
-// ANCHOR_END: all

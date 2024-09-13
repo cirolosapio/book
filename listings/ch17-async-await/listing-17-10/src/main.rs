@@ -22,11 +22,9 @@ fn main() {
         };
 
         let rx_fut = async {
-            // ANCHOR: loop
             while let Some(value) = rx.recv().await {
                 println!("received '{value}'");
             }
-            // ANCHOR_END: loop
         };
 
         trpl::join(tx_fut, rx_fut).await;
